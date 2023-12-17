@@ -1,0 +1,133 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333; /* Set text color */
+}
+
+/* App container styles */
+.app-container {
+  max-width: 10000px;
+  
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* Search container styles */
+.search-container {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 10%;
+}
+
+/* Messages container styles */
+.messages-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+}
+.message-count {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.message-list {
+  list-style: none;
+  padding: 0;
+}
+
+.message-card {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-width: 50%; 
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+  }
+
+  .message-card {
+    padding: 8px;
+  }
+}
+.suggested-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;  
+  margin-left: 10%;
+}
+
+.tag {
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+ 
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tag:hover {
+  background-color: #ddd;  
+}
+
+
+
+#loaderdiv{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#SearchButton{
+  height: 35px;
+  background-color: white;
+  border: 1px solid black;
+  width: 50px;
+  color: black;
+  display: inline-flex !important;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 10px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+#SearchButton img{
+  height: 30px;
+}
+
